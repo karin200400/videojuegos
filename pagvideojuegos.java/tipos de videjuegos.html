@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Videojuegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #9e089e;
+            color: #0a0214;
+        }
+        header {
+            background-color: #55328d;
+            color: rgb(13, 14, 13);
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #172288;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+        nav ul li a {
+            color: rgb(212, 200, 26);
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2em;
+        }
+        .card {
+            background-color: rgb(19, 171, 182);
+            border: 1px solid #390970;
+            border-radius: 8px;
+            margin-bottom: 2em;
+            box-shadow: 0 2px 4px rgba(177, 114, 20, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card h2 {
+            background-color: #180d80;
+            color: white;
+            padding: 0.5em;
+            margin: 0;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .card p {
+            padding: 1em;
+        }
+        footer {
+            background-color: #9e5510;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tipos de Videojuegos</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#accion">Acción</a></li>
+        <li><a href="#aventura">Aventura</a></li>
+        <li><a href="#rol">Rol</a></li>
+        <li><a href="#deportes">Deportes</a></li>
+        <li><a href="#estrategia">Estrategia</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="accion" class="card">
+        <h2>Acción</h2>
+        <p>Los videojuegos de acción son aquellos que desafían al jugador con pruebas de reflejos, precisión y velocidad. Ejemplos populares incluyen "Call of Duty", "Fortnite" y "Street Fighter".</p>
+        <img src="imgcallofduty.jpg"width="300" height="300" >
+    </section>
+
+    <section id="aventura" class="card">
+        <h2>Aventura</h2>
+        <p>Los juegos de aventura se centran en la exploración y la narrativa. Los jugadores resuelven acertijos y descubren historias. Ejemplos incluyen "The Legend of Zelda", "Uncharted" y "Tomb Raider".</p>
+        <img src="img aventura videojuegos.jpeg"width="300" height="300">
+    </section>
+
+    <section id="rol" class="card">
+        <h2>Rol</h2>
+        <p>Los juegos de rol, o RPGs, permiten a los jugadores asumir el papel de personajes en un mundo ficticio. Ejemplos incluyen "Final Fantasy", "The Witcher" y "World of Warcraft".</p>
+        <img src="img rol videojuegos.jpeg" width="300" height="300">
+    </section>
+
+    <section id="deportes" class="card">
+        <h2>Deportes</h2>
+        <p>Los juegos de deportes simulan la práctica de deportes. Ejemplos incluyen "FIFA", "NBA 2K" y "Madden NFL".</p>
+        <img src="img deportes videojuegos.jpeg"width="300" height="300">
+    </section>
+
+    <section id="estrategia" class="card">
+        <h2>Estrategia</h2>
+        <p>Los juegos de estrategia requieren que los jugadores planifiquen y gestionen recursos para lograr la victoria. Ejemplos incluyen "StarCraft", "Civilization" y "Age of Empires".</p>
+        <img src="videojuegos.jpg"width="300" height="300">
+    </section>
+</main>
+
+</body>
+</html>

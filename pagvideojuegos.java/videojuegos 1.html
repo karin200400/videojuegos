@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #21bd1c;
+        }
+        header {
+            background-color: #0e0101;
+            color: #23e0e0;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-image: url('gif de videojuego niña.gif' ); /* Reemplaza con la URL de tu imagen */
+            background-size: cover;
+            color: #71079b;
+            padding: 200px;
+            text-align: center;
+        }
+        nav a {
+            color: #7d1386;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #330c3f;
+            color: #b84f0a;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .dynamic-text {
+            border: 2px solid #007BFF;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #640e64;
+            margin-top: 20px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #7a0d7a;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Videojuegos</h1>
+    </header>
+    <nav>
+        <a href="ventajas y desventajas.html" target="_blank">VENTAJAS Y DESVENTAJAS</a>
+        <a href="LISTA DE VIDEOJUEGOS.html" target="_blank">LISTA DE VIDEOJUEGOS</a>
+        <a href="https://play.google.com/store/games" target="_blank">PLAY STORE</a>
+        <a href="https://store.steampowered.com/games/" target="_blank">STEAM</a>
+    </nav>
+</head>
+
+</body>
+<body>
+
+<h1>Características de los Videojuegos</h1>
+<div class="dynamic-text" id="dynamicText">
+    <h2>¿Qué son los Videojuegos?</h2>
+    <p>Los videojuegos son juegos electrónicos que se juegan mediante el uso de una computadora, consola de videojuegos, o un dispositivo móvil. Son una forma de entretenimiento interactivo que combina gráficos, sonido y mecánicas de juego para crear experiencias inmersivas para los jugadores.</p>
+</div>
+
+<button onclick="showFeatures()">Mostrar Características</button>
+
+<script>
+    function showFeatures() {
+        const dynamicTextDiv = document.getElementById('dynamicText');
+        dynamicTextDiv.innerHTML = `
+            <h2>Características de los Videojuegos</h2>
+            <ul>
+                <li><strong>Interactividad:</strong> Los jugadores pueden interactuar con el juego y tomar decisiones que afectan el resultado.</li>
+                <li><strong>Gráficos:</strong> Los videojuegos utilizan gráficos en 2D o 3D para crear entornos visuales atractivos.</li>
+                <li><strong>Audio:</strong> La música, los efectos de sonido y las voces son componentes esenciales que mejoran la experiencia de juego.</li>
+                <li><strong>Historia:</strong> Muchos videojuegos cuentan con historias elaboradas y personajes profundos.</li>
+                <li><strong>Multijugador:</strong> Algunos videojuegos permiten jugar con o contra otros jugadores a través de internet o en la misma consola.</li>
+                <li><strong>Desafío:</strong> Los videojuegos suelen tener distintos niveles de dificultad y retos que los jugadores deben superar.</li>
+            </ul>
+        `;
+    }
+</script>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice de Videojuegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #741c1c;
+        }
+        header {
+            background-color: #19755a;
+            color: #270d6e;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #1a6166;
+            color: #501a1a;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #168b16;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .index-section {
+            margin-bottom: 20px;
+        }
+        .index-section h2 {
+            background-color: #641e9e;
+            color: #37924e;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .index-section p {
+            padding: 10px;
+            background-color: #c7c421;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <header>
+        <h1>Índice de Videojuegos</h1>
+    </header>
+    <nav>
+        <a href="HISTORIA,DATOSVIDEOJUEGOS.html">historia de los videojuegos</a>
+        <a href="tipos de videjuegos.html">tipos de videojuegos </a>
+        <a href="https://poki.com/es">poki</a>
+        <a href="https://www.minijuegos.com/">juegos online</a>
+    </nav>
+        <div id="seccion2" class="index-section">
+            <h2 onclick="toggleContent('content2')">Historia de los Videojuegos</h2>
+            <p id="content2">La historia de los videojuegos se remonta a los años 1950 y 1960 cuando se desarrollaron los primeros juegos simples. Desde entonces, la industria ha evolucionado rápidamente, con avances en gráficos, sonido y complejidad de juego.</p>
+        </div>
+        <div id="seccion3" class="index-section">
+            <h2 onclick="toggleContent('content3')">Géneros de Videojuegos</h2>
+            <p id="content3">Existen muchos géneros de videojuegos, incluyendo acción, aventura, rol (RPG), deportes, estrategia, y simulación. Cada género ofrece una experiencia única y atrae a diferentes tipos de jugadores.</p>
+        </div>
+        <div id="seccion4" class="index-section">
+            <h2 onclick="toggleContent('content4')">Impacto de los Videojuegos</h2>
+            <p id="content4">Los videojuegos han tenido un gran impacto en la sociedad moderna. Han influenciado la cultura popular, han sido objeto de investigaciones académicas, y han creado nuevas formas de entretenimiento y comunicación.</p>
+        </div>
+    <script>
+        function toggleContent(contentId) {
+            var content = document.getElementById(contentId);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+    </br>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Características de los Videojuegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .dynamic-text {
+            border: 2px solid #007BFF;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #5b1b61;
+        }
+        button {
+            margin-top: 10px;
+        }
+    </style>
+
+<div>
+<iframe width="315" height="315" src="https://www.youtube.com/embed/G_w0XkSuvE0?si=9Z8o6wWsSPF4LE81" title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen></iframe>
+<img src="imgcallofduty.jpg" width="300" height="300"  title="imgcallofduty">
+</div>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre Videojuegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #390e7e;
+        }
+        header {
+            background-color: #333;
+            color: #8d2c2c;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #691717;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #5a1368;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background-color: #5ec7be;
+            border: 1px solid #ac3c3c;
+            border-radius: 5px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        footer {
+            background-color: #922d2d;
+            color: #a6af24;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .dynamic-text {
+            border: 2px solid #138f38;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #838b15;
+            margin: 20px;
+            width: calc(100% - 40px);
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #a2c71e;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Información sobre Videojuegos</h1>
+    </header>
+    <div class="container">
+        <div class="card">
+            <img src="imgcallofduty.jpg" alt="Videojuego 1">
+            <div class="card-content">
+                <h3>call of duty</h3>
+                <p> Un juego increíble lleno de aventuras y desafíos.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="God of War.jpeg" alt="Videojuego 2">
+            <div class="card-content">
+                <h3>God of War</h3>
+                <p> Un juego increíble lleno de aventuras y desafíos.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="gif de timmy videojuego.gif" alt="200">
+            <div class="card-content">
+                <h3>timmy</h3>
+                <p> Un juego increíble lleno de aventuras y desafíos.</p>
+            </div>
+        </div>
+     
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Información sobre Videojuegos</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #729dcf;
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 100vh;
+                }
+                header {
+                    background-color: #25a321;
+                    color: #5e1588;
+                    padding: 20px;
+                    text-align: center;
+                }
+                nav {
+                    background-color: #444;
+                    color: #2a135e;
+                    padding: 10px;
+                    text-align: center;
+                }
+                nav a {
+                    color: #0c435c;
+                    text-decoration: none;
+                    margin: 0 10px;
+                    font-weight: bold;
+                }
+                nav a:hover {
+                    text-decoration: underline;
+                }
+                .container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding: 20px;
+                    flex: 1;
+                }
+                .card {
+                    background-color: #2c7ba8;
+                    border: 1px solid #1c0c57;
+                    border-radius: 5px;
+                    margin: 10px;
+                    width: 300px;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                }
+                .card img {
+                    width: 100%;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+                .card-content {
+                    padding: 15px;
+                }
+                footer {
+                    background-color: #e5ebcdc4;
+                    color: rgb(17, 53, 100);
+                    text-align: center;
+                    padding: 1em 0;
+                }
+                .dynamic-text {
+                    border: 2px solid #007BFF;
+                    padding: 15px;
+                    border-radius: 5px;
+                    background-color: #f9f9f9;
+                    margin: 20px;
+                    width: calc(100% - 40px);
+                }
+                button {
+                    margin-top: 10px;
+                    padding: 10px 20px;
+                    background-color: #007BFF;
+                    color: #fff;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                button:hover {
+                    background-color: #0056b3;
+                }
+                .social-icons {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    margin-top: 10px;
+                }
+                .social-icons a {
+                    text-decoration: none;
+                    color: #dbd7d7;
+                    font-size: 24px;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    transition: background-color 0.3s;
+                }
+                .social-icons a.facebook {
+                    background-color: #3b5998;
+                }
+                .social-icons a.facebook:hover {
+                    background-color: #1f3a75;
+                }
+                .social-icons a.instagram {
+                    background-color: #57393e;
+                }
+                .social-icons a.instagram:hover {
+                    background-color: #bc2a8d;
+                }
+            </style>
+
+            <footer>
+                <p>Derechos de autor 2024 página sobre Videojuegos. Karin Sevilla.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100051658373042L" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/laflaquitasevilla?igsh=MW41dHQ1OWRwa3oxeg==" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                </div><a href="https://wa.me/96634991" target="_blank" class="whatsapp"><i class=""></i></a>
+                <p>&copy; Redes sociales. Todos los derechos reservados.</p>
+            </footer>        
+</body>
+</html>

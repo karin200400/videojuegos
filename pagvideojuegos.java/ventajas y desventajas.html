@@ -1,0 +1,159 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventajas y Desventajas de los Videojuegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #5d22a0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #1b4b94;
+            color: #0a0a0a;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #054cc7 3px solid;
+        }
+
+        header a {
+            color: #8bc71b;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        header ul li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        #showcase {
+            min-height: 400px;
+            background: url('fondo de videojuegos.jpeg') no-repeat center center;
+            background-size: cover;
+            text-align: center;
+            color: #13ac27;
+        }
+
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        .content-section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #1e9724;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content-section img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .content-section p {
+            font-size: 10px;
+            line-height: 1.6;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .btn {
+            background: #9c590b;
+            color: #0f7c18;
+            padding: 10px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #355181;
+        }
+    </style>
+    <script>
+        function toggleContent(section) {
+            var content = document.getElementById(section);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ventajas y Desventajas de los Videojuegos</h1>
+            <ul>
+                <li><a href="#" onclick="toggleContent('ventajas')">Ventajas</a></li>
+                <li><a href="#" onclick="toggleContent('desventajas')">Desventajas</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Los Videojuegos: ¿Beneficios o Perjuicios?</h1>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="ventajas" class="content-section" style="display: none;">
+            <h2>Ventajas de los Videojuegos</h2>
+            <img src="ventajas videojuegos.jpeg" width="350" height="300">
+            <p>Los videojuegos pueden tener varios beneficios, incluyendo:</p>
+            <ul>
+                <li>Mejora de habilidades cognitivas como la atención y la memoria.</li>
+                <li>Desarrollo de habilidades motoras y coordinación ojo-mano.</li>
+                <li>Fomento de la creatividad y la imaginación.</li>
+                <li>Posibilidad de socializar y formar comunidades online.</li>
+                <li>Formación en la toma de decisiones y resolución de problemas.</li>
+            </ul>
+        </section>
+</div>
+        <section id="desventajas" class="content-section" style="display: none;">
+            <h2>Desventajas de los Videojuegos</h2>
+            <img src="desventajas videojuegos.jpeg" width="100" height="400">
+            <p>Sin embargo, los videojuegos también pueden tener algunos efectos negativos, tales como:</p>
+            <ul>
+                <li>Riesgo de adicción y abuso del tiempo de juego.</li>
+                <li>Posibles problemas de salud física como el sedentarismo y la vista cansada.</li>
+                <li>Impacto negativo en el rendimiento académico si no se gestionan adecuadamente.</li>
+                <li>Exposición a contenidos violentos o inapropiados.</li>
+                <li>Aislamiento social en casos extremos.</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>

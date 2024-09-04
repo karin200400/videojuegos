@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDEOJUEGOS</title>
+    <style>
+        body {
+            margin: 5px;
+            padding: 5px;
+            font-family: Arial, sans-serif;
+            color: #b1ae21;
+            background-image: url('gif.webp'); /* Asegúrate de tener una imagen llamada 'fondo.jpg' en el mismo directorio o usa una URL completa */
+            background-size: cover;
+            background-position: center;
+            
+        }
+        header {
+            padding: 20px;
+            background-color: rgba(44, 197, 13, 0.5);
+            text-align: center;
+        }
+        nav {
+            margin: 0;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        nav a {
+            color: #2caf78;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.9);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: #9bc22f;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #751313;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VIDEOJUEGOS</h1>
+    </header>
+    <nav>
+        <a href="HISTORIA,DATOSVIDEOJUEGOS.html">HISTORIA</a>
+        <a href="tipos de videjuegos.html">TIPOS DE VIDEOJUEGOS</a>
+        <a href="LISTA DE VIDEOJUEGOS.html">LISTA DE VIDEOJUEGOS</a>
+        <a href="ventajas y desventajas.html">VENTAJAS Y DESVENTAJAS</a>
+        <div class="dropdown">
+            <span>Más</span>
+            <div class="dropdown-content" id="dropdown-content">
+                <a href="prueba1.html">Importancia</a>
+                <a href="https://poki.com/es">poki</a>
+                <a href="https://store.steampowered.com/games/">steam</a>
+            </div>
+        </div>
+    </nav>
+    <script src="men.js"></script>
+    <img src="img1.jpeg"width="400" height="300" >
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Videojuegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #menu {
+            margin-bottom: 20px;
+        }
+        .option {
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #297d9e;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .option:hover {
+            background-color: #2b9b56;
+        }
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>nuevo videojuego</h1>
+    <div id="menu">
+        <div class="option" onclick="verJuegos()">Ver juegos disponibles</div>
+        <div class="option" onclick="añadirJuego()">Añadir nuevo juego</div>
+        <div class="option" onclick="eliminarJuego()">Eliminar un juego</div>
+        <div class="option" onclick="buscarJuego()">Buscar juego</div>
+        <div class="option" onclick="salir()">Salir</div>
+    </div>
+    <div id="output"></div>
+
+    <script src="menu.js"></script>
+
+  
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre Videojuegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+        .section p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1em;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Todo sobre los Videojuegos</h1>
+        <div class="section">
+            <h2>¿Qué son los Videojuegos?</h2>
+            <p>Los videojuegos son una forma de entretenimiento digital que involucra la interacción con una interfaz de usuario para generar retroalimentación visual en un dispositivo como una computadora, una consola de videojuegos o un dispositivo móvil. Los videojuegos pueden ser jugados en solitario o en multijugador, y abarcan una amplia variedad de géneros y estilos.</p>
+        </div>
+        <div class="section">
+            <h2>Características de los Videojuegos</h2>
+            <button class="button" onclick="toggleDetails('graphics')">Gráficos</button>
+            <button class="button" onclick="toggleDetails('sound')">Sonido</button>
+            <button class="button" onclick="toggleDetails('story')">Historia</button>
+            <div id="graphics" class="details">
+                <h3>Gráficos</h3>
+                <p>Los gráficos en los videojuegos se refieren a la calidad visual del juego. Esto incluye texturas, modelos 3D, y efectos visuales que hacen que el juego sea más inmersivo y atractivo.</p>
+            </div>
+            <div id="sound" class="details">
+                <h3>Sonido</h3>
+                <p>El sonido en los videojuegos incluye música, efectos de sonido y voces. Un buen diseño de sonido mejora la experiencia del jugador al proporcionar una atmósfera y feedback auditivo que complementa las acciones en el juego.</p>
+            </div>
+            <div id="story" class="details">
+                <h3>Historia</h3>
+                <p>La historia en los videojuegos puede ser una narrativa profunda que involucra al jugador en una trama compleja o puede ser un elemento más simple. Una buena historia en un videojuego puede aumentar el compromiso del jugador y hacer que el juego sea más memorable.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            const element = document.getElementById(id);
+            if (element.style.display === 'none' || element.style.display === '') {
+                element.style.display = 'block';
+            } else {
+                element.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+
+
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cuadros de Texto sobre Videojuegos</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #6e1414;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+    
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                max-width: 1200px;
+                width: 100%;
+            }
+    
+            .info-box {
+                background: #82a6bb;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                width: 300px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+    
+            .info-box:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+    
+            .info-box h2 {
+                font-size: 20px;
+                color: #007bff;
+                margin-top: 0;
+            }
+    
+            .info-box p {
+                font-size: 14px;
+                color: #333;
+                line-height: 1.6;
+            }
+    
+            .info-box ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                font-size: 14px;
+                color: #333;
+            }
+    
+            .info-box ul li {
+                margin-bottom: 10px;
+            }
+    
+            .info-box ul li::before {
+                content: '✓';
+                color: #28a745;
+                margin-right: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="info-box">
+                <h2>Beneficios Cognitivos</h2>
+                <p>Los videojuegos pueden ofrecer diversos beneficios cognitivos, tales como:</p>
+                <ul>
+                    <li>Mejora en la toma de decisiones rápidas.</li>
+                    <li>Desarrollo de habilidades de resolución de problemas.</li>
+                    <li>Mejora de la coordinación mano-ojo.</li>
+                </ul>
+            </div>
+    
+            <div class="info-box">
+                <h2>Socialización en Línea</h2>
+                <p>Los videojuegos también son una excelente plataforma para la socialización:</p>
+                <ul>
+                    <li>Interacción con jugadores de todo el mundo.</li>
+                    <li>Creación de comunidades y amistades duraderas.</li>
+                    <li>Colaboración en equipos para lograr objetivos comunes.</li>
+                </ul>
+            </div>
+    
+            <div class="info-box">
+                <h2>Aspectos Educativos</h2>
+                <p>Muchos videojuegos incorporan elementos educativos:</p>
+                <ul>
+                    <li>Incorporación de temas históricos y científicos.</li>
+                    <li>Desarrollo de habilidades de estrategia y planificación.</li>
+                    <li>Estimulación del pensamiento crítico y la creatividad.</li>
+                </ul>
+            </div>
+        </div>
+   
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Videojuegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #2ab331;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .game-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+            overflow: hidden;
+        }
+        .game-card img {
+            width: 100%;
+            height: auto;
+        }
+        .game-card h2 {
+            margin: 0;
+            padding: 16px;
+            background-color: #007bff;
+            color: white;
+            font-size: 1.5em;
+        }
+        .game-card p {
+            padding: 16px;
+            font-size: 1em;
+        }
+        .game-card a {
+            display: block;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            font-weight: bold;
+        }
+        .game-card a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Información sobre Videojuegos</h1>
+    <div class="container" id="gamesContainer">
+        <!-- Los juegos se agregarán aquí por JavaScript -->
+    </div>
+
+    <script>
+        // Información sobre los videojuegos
+        const games = [
+            {
+                title: 'The Legend of Zelda: Breath of the Wild',
+                image: 'the legend of zelda.jpeg', // Reemplaza con la URL real
+                description: 'Un videojuego de acción y aventura desarrollado y publicado por Nintendo.',
+                link: 'https://www.zelda.com/breath-of-the-wild/'
+            },
+            {
+                title: 'Red Dead Redemption 2',
+                image: 'red dead.jpeg', // Reemplaza con la URL real
+                description: 'Un videojuego de acción y aventura en un mundo abierto desarrollado y publicado por Rockstar Games.',
+                link: 'https://www.rockstargames.com/reddeadredemption2'
+            },
+            {
+                title: 'Cyberpunk 2077',
+                image: 'cyber.gif', // Reemplaza con la URL real
+                description: 'Un videojuego de rol y acción desarrollado por CD Projekt Red.',
+                link: 'https://www.cyberpunk.net/'
+            }
+        ];
+
+        // Función para crear tarjetas de juegos
+        function createGameCard(game) {
+            return `
+                <div class="game-card">
+                    <img src="${game.image}" alt="${game.title}">
+                    <h2>${game.title}</h2>
+                    <p>${game.description}</p>
+                    <a href="${game.link}" target="_blank">Más Información</a>
+                </div>
+            `;
+        }
+
+        // Agregar las tarjetas de juegos al contenedor
+        const gamesContainer = document.getElementById('gamesContainer');
+        gamesContainer.innerHTML = games.map(createGameCard).join('');
+    </script>
+
+
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Redes Sociales Flotantes</title>
+            <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                    font-family: Arial, sans-serif;
+                }
+        
+                .social-container {
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                    z-index: 1000;
+                }
+        
+                .social-icon {
+                    width: 40px;
+                    height: 40px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+        
+                .social-icon:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+                }
+        
+                .social-icon img {
+                    width: 20px;
+                    height: 20px;
+                    transition: opacity 0.3s ease;
+                }
+        
+                .social-icon:hover img {
+                    opacity: 0.8;
+                }
+        
+                /* Icon colors */
+                .facebook { background-color: #3b5998; }
+                .twitter { background-color: #1da1f2; }
+                .instagram { background-color: #e1306c; }
+                .linkedin { background-color: #0077b5; }
+            </style>
+        </head>
+        <body>
+            <div class="social-container">
+                <a href="https://www.facebook.com/profile.php?id=100051658373042L" class="social-icon facebook" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                </a>
+                <a href="https://wa.me/96634991" class="social-icon twitter" target="_blank">
+                    <img src="iconowhatsapp.jpeg" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com/laflaquitasevilla?igsh=MW41dHQ1OWRwa3oxeg==" class="social-icon instagram" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/@yamileth_ldk?_t=8otWcLJY4Wr&_r=1" class="social-icon linkedin" target="_blank">
+                    <img src="icono de tiktok.jpeg" alt="LinkedIn">
+                </a>
+            </div>
+        
+            <script>
+                // JavaScript to add dynamic features can be added here if needed
+            </script>
+        </body>
+        </html>
+        
+</body>
+</html>
